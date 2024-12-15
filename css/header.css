@@ -1,0 +1,45 @@
+.header {
+  padding-top: 46px;
+}
+
+.header-container {
+  max-width: 1117px;
+  margin: 0 auto;
+  padding: 0 0 0 60px;
+}
+
+.header__menu {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.header__logo {
+  min-width: 100px;
+  height: 71px;
+}
+
+.header__logo-text {
+  font-weight: 400;
+  font-size: 26px;
+}
+
+@media (max-width: 642px) {
+  .header-container {
+    max-width: 322px;
+    padding: 0 20px;
+  }
+
+  .header__menu {
+    gap: 16px;
+  }
+
+  .header__logo {
+    min-width: 80px;
+    height: 57px;
+  }
+
+  .header__logo-text {
+    font-size: 20px;
+  }
+}

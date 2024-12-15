@@ -1,0 +1,108 @@
+@font-face {
+  font-family: SF Pro;
+  src: local(SF Pro), local('SF-Pro'),
+      url(../fonts/SF-Pro.ttf) format("woff2"),
+      url(../fonts/SF-Pro.ttf) format("woff");
+      font-weight: 400;
+      font-display: swap;
+}
+
+@font-face {
+  font-family: Inter;
+  src: local(Inter), local('Inter'),
+      url(../fonts/Inter.ttc) format("woff2"),
+      url(../fonts/Inter.ttc) format("woff");
+      font-weight: 400;
+      font-display: swap;
+}
+
+html {
+    position: relative;
+    box-sizing: border-box;
+  }
+
+  :root {
+    --font-family: "SF Pro", sans-serif;
+    --second-family: "Inter", sans-serif;
+  }
+  
+  :root {
+    --color-white: #FDFEFE;
+    --color-orange: #F7A852;
+    --color-black: #333333;
+    --color-gray: #f1f1f1;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    min-width: 320px;
+    min-height: 100vh;
+    font-family: var(--font-family);
+    color: var(--color-black);
+    
+  }
+  
+  img, svg {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+  }
+  
+  button {
+    padding: 0;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  h1,
+  h2,
+  h3,
+  p,
+  figure,
+  fieldset {
+    margin: 0;
+  }
+  
+  iframe {
+    border: none;
+  }
+  
+  /*
+  Доступно скрываю элементы
+  */
+  
+  .visually-hidden {
+    position: fixed;
+    transform: scale(0);
+  }
+  
+  .container {
+    max-width: 1056px;
+    margin: 0 auto;
+    padding: 0 30px;
+  }
+
+  @media (max-width: 642px) {
+    .container {
+      max-width: 401px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }  
+  }
